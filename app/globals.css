@@ -1,33 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --blue: #00AFEF;
+  --lightBlue: #85DEFF;
+  --veryLightBlue: #BFE8FB;
+  --green: #00A859;
+  --lightGreen: #51F0A5;
+  --veryLightGreen: #A3F5CE;
+  --darkGrey: #484848;
+  --lightGrey: #D9D9D9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.admin_dashboard_grid {
+  display: grid; 
+
+  grid-template-rows: repeat(2,minmax(200px,1fr));
+  grid-template-columns: repeat(3,minmax(200px,1fr));
+  gap: 30px;
+  height: auto;
+  width: 100%;
+  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.admin_grid_item {
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.19);
+}
+
+
+.title_text {
+  font-size: 36px;
+  line-height: 122.22%;
+  font-family: Inter;
+  color: #000000;
+  font-weight: 700; /* Semi-bold */
+}
+
+.big_text {
+  font-size: 24px;
+  line-height: auto;
+  font-family: Inter;
+  color: #000000;
+  font-weight: 600; 
+}
+
+table {
+  border-collapse: separate;
+  width: 100%;
+  margin-top: 24px;
+  text-align: left;
+}
+
+th {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+}
+
+
+
+.primary_btn {
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: var(--blue);
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.doctor_dashboard_grid {
+  display: grid; 
+  grid-template-rows: repeat(2,minmax(200px,1fr));
+  grid-template-columns: repeat(2,minmax(200px,1fr));
+  gap: 30px;
+  height: auto;
+  width: 100%;
+}
+
+.doctor_grid_item {
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.19);
+  padding: 24px;
+  height: 350px;
 }
