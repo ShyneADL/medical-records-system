@@ -1,4 +1,4 @@
-import Sidebar from '@app/components/AdminSideBar.jsx'
+import Sidebar from '@app/components/DoctorSideBar.jsx'
 import Searchbar from '@app/components/SearchBar.jsx'
 import Bell from '@app/components/Bell'
 import Messages from '@app/components/Messages'
@@ -11,7 +11,7 @@ const page = () => {
   return (
     <section className='flex items-start w-full'>
       <Sidebar/>
-      <main className='px-6 my-6 w-full flex flex-col items-start gap-8'>
+      <main className='ml-[250px] px-6 my-6 w-full flex flex-col items-start gap-8'>
         <div className='w-full flex items-center justify-between'>
           <div className='flex items-center gap-4'>
             <Searchbar />

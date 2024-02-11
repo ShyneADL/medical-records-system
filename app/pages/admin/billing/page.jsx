@@ -12,7 +12,7 @@ const page = () => {
   return (
     <section className='flex items-start w-full'>
       <Sidebar />
-      <main className='px-6 my-6 w-full flex flex-col items-start gap-8'>
+      <main className='ml-[250px] px-6 my-6 w-full flex flex-col items-start gap-8'>
       <div className='w-full flex items-center justify-between'>
           <div className='flex items-center gap-4'>
             <Searchbar />
@@ -29,7 +29,7 @@ const page = () => {
         <div className='flex items-center justify-between w-full'>
           <h1 className='title_text'>Billing</h1>
           <div className='flex items-center gap-3'>
-            {/* <DropdownMenu /> */}
+            <DropdownMenu />
             <button className='primary_btn'>Add a New Bill</button>
           </div>
         </div>

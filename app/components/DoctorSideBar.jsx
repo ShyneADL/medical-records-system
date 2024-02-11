@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const sidebar = () => {
   return (
-    <aside className='h-[100vh] relative w-[250px] border-r-[1px] border-r-solid border-r-grey flex flex-col items-start justify-between'>
+    <aside className='h-[100vh] fixed w-[250px] border-r-[1px] border-r-solid border-r-grey flex flex-col items-start justify-between'>
       <div className='p-8 w-full border-b-[1px] border-b-solid border-b-grey'>
         <Image
         src=''
@@ -38,7 +38,6 @@ const sidebar = () => {
           <p>Log Out</p>
           </div>
       </div>
-
     </aside>
   )
 }
