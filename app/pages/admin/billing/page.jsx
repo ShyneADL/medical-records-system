@@ -29,7 +29,7 @@ const page = () => {
         <div className='flex items-center justify-between w-full'>
           <h1 className='title_text'>Billing</h1>
           <div className='flex items-center gap-3'>
-            <DropdownMenu />
+            {/* <DropdownMenu /> */}
             <button className='primary_btn'>Add a New Bill</button>
           </div>
         </div>
