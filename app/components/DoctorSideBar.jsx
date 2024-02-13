@@ -17,7 +17,7 @@ const sidebar = () => {
           <p>Dashboard</p>
         </div>
         <div className='flex items-center gap-2'>
-          <p>Patientss</p>
+          <p>Patients</p>
         </div>
         <div className='flex items-center gap-2'>
           <p>Scheduling</p>

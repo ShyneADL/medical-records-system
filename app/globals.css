@@ -47,7 +47,6 @@
   font-size: 36px;
   line-height: 122.22%;
   font-family: Inter;
-  color: #000000;
   font-weight: 700; /* Semi-bold */
 }
 
@@ -55,9 +54,39 @@
   font-size: 24px;
   line-height: auto;
   font-family: Inter;
-  color: #000000;
   font-weight: 600; 
 }
+
+.med_text {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  letter-spacing: 0.02px;
+}
+
+.small_text {
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  letter-spacing: 0.02px;
+}
+
+.grey_text {
+  font-size: 20px;
+  font-family: Inter;
+  color: var(--darkGrey);
+  font-weight: 600;
+  letter-spacing: 0.02px;
+}
+
+.small_grey_text {
+  font-size: 14px;
+  font-family: Inter;
+  color: var(--darkGrey);
+  font-weight: 500;
+  letter-spacing: 0.02px;
+}
+
 
 table {
   border-collapse: separate;

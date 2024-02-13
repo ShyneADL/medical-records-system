@@ -53,36 +53,110 @@ const page = () => {
 
             </div>
         </div>
-        <div className='flex flex-col items-start gap-4 rounded-[12px] shadow'>
-            <div className='flex items-center gap-20 p-6 border-b-1 border-b-solid border-b-lightGrey'>
+        <div className='flex flex-col items-start rounded-[12px] shadow bg-white w-[60%]'>
+            <div className='flex items-center justify-between p-6 border-b-[1px] border-b-solid border-b-lightGrey w-full'>
                 {/*Height*/}
-                <div className='flex flex-col items-start gap-6'>
-                    <Image
-                    src=''
-                    width={16}
-                    height={16}
-                    />
+                <div className='flex flex-col items-start gap-6 w-[180px]'>
+                    <div className='flex items-center gap-2'>
+                      <Image
+                      src=''
+                      width={16}
+                      height={16}
+                      />
+                      <p className='grey_text'>Height</p>
+                    </div>
                     <h3 className='big_text text-blue'>189cm</h3>
                 </div>
                 {/* Weight */}
-                <div className='flex flex-col items-start gap-6'>
-                    <Image
-                    src=''
-                    width={16}
-                    height={16}
-                    />
+                <div className='flex flex-col items-start gap-6 w-[150px]'>
+                <div className='flex items-center gap-2'>
+                      <Image
+                      src=''
+                      width={16}
+                      height={16}
+                      />
+                      <p className='grey_text'>Weight</p>
+                    </div>
                     <h3 className='big_text text-blue'>99kg</h3>
                 </div>
                 {/* BMI */}
-                <div className='flex flex-col items-start gap-6'>
-                    <Image
-                    src=''
-                    width={16}
-                    height={16}
-                    />
+                <div className='flex flex-col items-start gap-6 w-[150px]'>
+                <div className='flex items-center gap-2'>
+                      <Image
+                      src=''
+                      width={16}
+                      height={16}
+                      />
+                      <p className='grey_text'>BMI</p>
+                    </div>
                     <h3 className='big_text text-blue'>23.28</h3>
                 </div>
             </div>
+            <div className='flex items-center justify-between p-6 border-b-[1px] border-b-solid border-b-lightGrey w-full'>
+                {/*Blood Pressure*/}
+                <div className='flex items-center gap-4 w-[180px]'>
+                    <Image
+                    src=''
+                    width={10}
+                    height={10}
+                    />
+                    <h3 className='grey_text'>Blood Pressure</h3>
+                </div>
+                {/* Systolic */}
+                <div className='flex flex-col items-start gap-1 w-[150px]'>
+                    <h4 className='med_text text-blue'>120mmHg</h4>
+                    <p className='small_grey_text'>(Systolic)</p>
+                </div>
+                {/* Dyastolic */}
+                <div className='flex flex-col items-start gap-1 w-[150px]'>
+                    <h4 className='med_text text-blue'>80mmHg</h4>
+                    <p className='small_grey_text'>(Dyastolic)</p>
+                </div>
+                
+               
+            </div>
+            <div className='w-full items-center justify-center grey_text text-center p-6'>
+              Smoking Status: <span className='text-blue med_text'>None</span>
+            </div>
+        </div>
+        <div className='w-full bg-white rounded-[12px] flex flex-col items-start gap-4 shadow p-6 relative'>
+          <div className='flex items-center justify-between w-full'>
+            <h3 className='med_text'>Visits</h3>
+            <button className='shadow primary_btn'>New Visit</button>
+          </div>
+          <div className='flex items-center justify-between w-full'>
+            <div className='flex flex-col items-center justify-center bg-lightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
+              <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
+              <h3 className='text-black text-[16px] font-bold'>Headache</h3>
+              <Image
+              src=''
+              width={20}
+              height={20}
+              />
+              <h2 className='text-black text-[22px] font-400 uppercase mt-2'>SIGNED OFF</h2>
+            </div>
+            <div className='flex flex-col items-center justify-center bg-lightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
+              <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
+              <h3 className='text-black text-[16px] font-bold'>Headache</h3>
+              <Image
+              src=''
+              width={20}
+              height={20}
+              />
+              <h2 className='text-black text-[22px] font-400 uppercase mt-2'>In Progress</h2>
+            </div>
+            <div className='flex flex-col items-center justify-center bg-lightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
+              <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
+              <h3 className='text-black text-[16px] font-bold'>Headache</h3>
+              <Image
+              src=''
+              width={20}
+              height={20}
+              />
+              <h2 className='text-black text-[22px] font-400 uppercase mt-2'>SIGNED OFF</h2>
+            </div>
+          </div>
+          <button className='primary_btn'></button>
         </div>
       </main>
     </section>
