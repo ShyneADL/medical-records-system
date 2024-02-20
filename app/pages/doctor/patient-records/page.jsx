@@ -7,6 +7,7 @@ import Messages from '@app/components/Messages'
 import ProfileIcon from '@app/components/ProfileIcon'
 import Image from 'next/image'
 import Link from 'next/link'
+import VisitsTab from '@app/components/VisitsTab'
 
 const page = () => {
   return (
@@ -28,12 +29,8 @@ const page = () => {
         </div>
         <div className='flex items-center gap-5 max-w-[600px]'>
             <h1 className='title_text w-fit'>Patients - Jude Dozie</h1>
-            <button className='flex items-center gap-3 text-blue text-[14px] font-400'>
-                <Image
-                src=''
-                width={16}
-                height={16}
-                />
+            <button className='flex items-center gap-1 text-blue text-[14px] font-400'>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" fill='#00AFEF' width="24"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
                 <p>Back to Patient's List</p>
             </button>
         </div>
@@ -119,45 +116,7 @@ const page = () => {
               Smoking Status: <span className='text-blue med_text'>None</span>
             </div>
         </div>
-        <div className='w-full bg-white rounded-[12px] flex flex-col items-start gap-4 shadow p-6 relative'>
-          <div className='flex items-center justify-between w-full'>
-            <h3 className='med_text'>Visits</h3>
-            <button className='shadow primary_btn'>New Visit</button>
-          </div>
-          <div className='flex items-center justify-between w-full'>
-            <div className='flex flex-col items-center justify-center bg-lightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
-              <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
-              <h3 className='text-black text-[16px] font-bold'>Headache</h3>
-              <Image
-              src=''
-              width={20}
-              height={20}
-              />
-              <h2 className='text-black text-[22px] font-400 uppercase mt-2'>SIGNED OFF</h2>
-            </div>
-            <div className='flex flex-col items-center justify-center bg-lightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
-              <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
-              <h3 className='text-black text-[16px] font-bold'>Headache</h3>
-              <Image
-              src=''
-              width={20}
-              height={20}
-              />
-              <h2 className='text-black text-[22px] font-400 uppercase mt-2'>In Progress</h2>
-            </div>
-            <div className='flex flex-col items-center justify-center bg-lightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
-              <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
-              <h3 className='text-black text-[16px] font-bold'>Headache</h3>
-              <Image
-              src=''
-              width={20}
-              height={20}
-              />
-              <h2 className='text-black text-[22px] font-400 uppercase mt-2'>SIGNED OFF</h2>
-            </div>
-          </div>
-          <button className='primary_btn'></button>
-        </div>
+        <VisitsTab />
       </main>
     </section>
   )
