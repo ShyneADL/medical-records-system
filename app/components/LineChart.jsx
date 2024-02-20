@@ -64,12 +64,12 @@ function LineChart() {
       y: {
         ticks: {
           font: {
-            size: 17,
+            size: 16,
             weight: "bold",
           },
         },
         title: {
-          display: true,
+          display: false,
           text: "Patients",
           padding: {
             bottom: 10,
@@ -85,12 +85,12 @@ function LineChart() {
       x: {
         ticks: {
           font: {
-            size: 17,
+            size: 16,
             weight: "bold",
           },
         },
         title: {
-          display: true,
+          display: false,
           text: "Month",
           padding: {
             top: 10,
@@ -109,8 +109,8 @@ function LineChart() {
     <div>
       <div
         style={{
-          width: "526.98px",
-          height: "346.8px",
+          width: "466.98px",
+          height: "326.8px",
           cursor: "pointer",
           marginTop: "24px"
         }}
