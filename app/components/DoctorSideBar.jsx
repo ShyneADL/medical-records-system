@@ -15,27 +15,27 @@ const sidebar = () => {
         />
       </div>
       <div className='flex flex-col items-start gap-6 h-[60%] p-8'>
-          <Link href='/pages/doctor/dashboard'>
+          <Link href='/doctor/dashboard'>
             <div onClick={(e) => setActive('Dashboard')} className='flex items-center gap-2'>
               <p className={`${active === 'Dashboard' ? 'active-link' : ''}`}>Dashboard</p>
             </div>
           </Link>
-          <Link href='/pages/doctor/patients'>
+          <Link href='/doctor/patients'>
             <div onClick={(e) => setActive('Patients')} className='flex items-center gap-2'>
               <p className={`${active === 'Patients' ? 'active-link' : ''}`}>Patients</p>
             </div>
           </Link>
-          <Link href='/pages/doctor/scheduling'>
+          <Link href='/doctor/scheduling'>
             <div onClick={(e) => setActive('Scheduling')} className='flex items-center gap-2'>
               <p className={`${active === 'Scheduling' ? 'active-link' : ''}`}>Scheduling</p>
             </div>
           </Link>
-          <Link href='/pages/doctor/reports'>
+          <Link href='/doctor/reports'>
             <div onClick={(e) => setActive('Reports')} className='flex items-center gap-2'>
               <p className={`${active === 'Reports' ? 'active-link' : ''}`}>Reports</p>
             </div>
           </Link>
-          <Link href='/pages/doctor/messages'>
+          <Link href='/doctor/messages'>
             <div onClick={(e) => setActive('Messages')} className='flex items-center gap-2'>
               <p className={`${active === 'Messages' ? 'active-link' : ''}`}>Messages</p>
             </div>

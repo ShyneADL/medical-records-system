@@ -1,10 +1,18 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const sidebar = () => {
-  const [active, setActive] = useState('Dashboard')
+  const router = useRouter();
+  const [active, setActive] = useState('');
+
+  // useEffect(() => {
+  //   // Update active based on the current path
+  //   const currentPath = router.pathname.split('/')[2]; // Example: 'dashboard'
+  //   setActive(currentPath);
+  // }, [router.pathname]);
   return (
     <aside className='h-[100vh] fixed w-[250px] border-r-[1px] border-r-solid border-r-grey flex flex-col items-start justify-between'>
         <div className='p-8 w-full border-b-[1px] border-b-solid border-b-grey'>
@@ -15,28 +23,28 @@ const sidebar = () => {
           />
         </div>
         <div className='flex flex-col items-start gap-6 h-[60%] p-8'>
-          <Link href='/pages/admin/dashboard'>
-            <div onClick={(e) => setActive('Dashboard')} className='flex items-center gap-2'>
+          <Link href='/admin/dashboard'>
+            <div className='flex items-center gap-2'>
               <p className={`${active === 'Dashboard' ? 'active-link' : ''}`}>Dashboard</p>
             </div>
           </Link>
-          <Link href='/pages/admin/users'>
-            <div onClick={(e) => setActive('Users')} className='flex items-center gap-2'>
+          <Link href='/admin/users'>
+            <div className='flex items-center gap-2'>
               <p className={`${active === 'Users' ? 'active-link' : ''}`}>Users</p>
             </div>
           </Link>
-          <Link href='/pages/admin/scheduling'>
-            <div onClick={(e) => setActive('Scheduling')} className='flex items-center gap-2'>
+          <Link href='/admin/scheduling'>
+            <div className='flex items-center gap-2'>
               <p className={`${active === 'Scheduling' ? 'active-link' : ''}`}>Scheduling</p>
             </div>
           </Link>
-          <Link href='/pages/admin/billing'>
-            <div onClick={(e) => setActive('Billing')} className='flex items-center gap-2'>
+          <Link href='/admin/billing'>
+            <div className='flex items-center gap-2'>
               <p className={`${active === 'Billing' ? 'active-link' : ''}`}>Billing</p>
             </div>
           </Link>
-          <Link href='/pages/admin/reports'>
-            <div onClick={(e) => setActive('Reports')} className='flex items-center gap-2'>
+          <Link href='/admin/reports'>
+            <div className='flex items-center gap-2'>
               <p className={`${active === 'Reports' ? 'active-link' : ''}`}>Reports</p>
             </div>
           </Link>
