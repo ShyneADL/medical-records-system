@@ -5,6 +5,7 @@ import Messages from '@app/components/Messages'
 import ProfileIcon from '@app/components/ProfileIcon'
 import Image from 'next/image'
 import Link from 'next/link'
+import DateBox from '@app/components/DateBox'
 
 const page = () => {
   return (
@@ -14,9 +15,7 @@ const page = () => {
         <div className='w-full flex items-center justify-between'>
           <div className='flex items-center gap-4'>
             <Searchbar />
-            <div className='rounded-xl border-[1px] border-solid border-grey p-3'>
-              10:50 AM, 02/02/2024
-            </div>
+            <DateBox />
           </div>
           <div className='flex items-center gap-4'>
             <Bell />

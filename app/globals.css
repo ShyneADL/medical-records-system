@@ -93,12 +93,15 @@ table {
   width: 100%;
   margin-top: 24px;
   text-align: left;
+  background-color: var(--lightBlue);
+  border-radius: 4px;
 }
 
 th {
-  font-size: 14px;
-  color: grey;
-  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  padding: 12px 8px;
 }
 
 .shadow {

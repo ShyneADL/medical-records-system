@@ -5,6 +5,7 @@ import Sidebar from '@app/components/AdminSideBar'
 import Bell from '@app/components/Bell'
 import Messages from '@app/components/Messages'
 import ProfileIcon from '@app/components/ProfileIcon'
+import DateBox from '@app/components/DateBox'
 
 const page = () => {
   return (

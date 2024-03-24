@@ -8,6 +8,8 @@ import ProfileIcon from '@app/components/ProfileIcon'
 import Image from 'next/image'
 import Link from 'next/link'
 import VisitsTab from '@app/components/VisitsTab'
+import DateBox from '@app/components/DateBox'
+
 
 const page = () => {
   return (
@@ -17,9 +19,7 @@ const page = () => {
         <div className='w-full flex items-center justify-between'>
           <div className='flex items-center gap-4'>
             <Searchbar />
-            <div className='rounded-xl border-[1px] border-solid border-grey p-3'>
-              10:50 AM, 02/02/2024
-            </div>
+            <DateBox />
           </div>
           <div className='flex items-center gap-4'>
             <Bell />
@@ -29,10 +29,12 @@ const page = () => {
         </div>
         <div className='flex items-center gap-5 max-w-[600px]'>
             <h1 className='title_text w-fit'>Patients - Jude Dozie</h1>
-            <button className='flex items-center gap-1 text-blue text-[14px] font-400'>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" fill='#00AFEF' width="24"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
-                <p>Back to Patient's List</p>
-            </button>
+            <Link href='/pages/doctor/patients'>
+              <button className='flex items-center gap-1 text-blue text-[14px] font-400'>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" fill='#00AFEF' width="24"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
+                  <p>Back to Patient's List</p>
+              </button>
+            </Link>
         </div>
         <div className='flex items-end gap-8'>
             <Pill first='Chart' second='Documents' third='Medications'/>
@@ -54,7 +56,7 @@ const page = () => {
             <div className='flex items-center justify-between p-6 border-b-[1px] border-b-solid border-b-lightGrey w-full'>
                 {/*Height*/}
                 <div className='flex flex-col items-start gap-6 w-[180px]'>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-start gap-2'>
                       <Image
                       src=''
                       width={16}
@@ -65,8 +67,8 @@ const page = () => {
                     <h3 className='big_text text-blue'>189cm</h3>
                 </div>
                 {/* Weight */}
-                <div className='flex flex-col items-start gap-6 w-[150px]'>
-                <div className='flex items-center gap-2'>
+                <div className='flex flex-col items-start gap-6 w-[180px]'>
+                  <div className='flex items-start gap-2'>
                       <Image
                       src=''
                       width={16}
@@ -77,8 +79,8 @@ const page = () => {
                     <h3 className='big_text text-blue'>99kg</h3>
                 </div>
                 {/* BMI */}
-                <div className='flex flex-col items-start gap-6 w-[150px]'>
-                <div className='flex items-center gap-2'>
+                <div className='flex flex-col items-start gap-6 w-[180px]'>
+                    <div className='flex items-start gap-2'>
                       <Image
                       src=''
                       width={16}
