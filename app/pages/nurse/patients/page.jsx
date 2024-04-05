@@ -1,56 +1,116 @@
-'use client'
-import { useState } from 'react'
-import Link from 'next/link'
+import Sidebar from '@app/components/NurseSideBar.jsx'
+import Searchbar from '@app/components/SearchBar.jsx'
+import Bell from '@app/components/Bell'
+import Messages from '@app/components/Messages'
+import ProfileIcon from '@app/components/ProfileIcon'
+import LineChart from '@app/components/LineChart'
 import Image from 'next/image'
+import Link from 'next/link'
+import DateBox from '@app/components/DateBox'
 
-const sidebar = () => {
-  const [active, setActive] = useState('Dashboard')
+const page = () => {  
   return (
-    <aside className='h-[100vh] fixed w-[250px] border-r-[1px] border-r-solid border-r-grey flex flex-col items-start justify-between'>
-        <div className='p-8 w-full border-b-[1px] border-b-solid border-b-grey'>
-          <Image
-          src=''
-          width={50}
-          height={50}
-          />
+    <section className='flex items-start w-full'>
+      <Sidebar/>
+      <main className='ml-[250px] px-6 my-6 w-full flex flex-col items-start gap-8'>
+        <div className='w-full flex items-center justify-between'>
+          <div className='flex items-center gap-4'>
+            <Searchbar />
+            <DateBox />
+          </div>
+          <div className='flex items-center gap-4'>
+            <Bell />
+            <Messages />
+            <ProfileIcon />
+          </div>
         </div>
-        <div className='flex flex-col items-start gap-6 h-[60%] p-8'>
-          <Link href='/pages/admin/dashboard'>
-            <div onClick={(e) => setActive('Dashboard')} className='flex items-center gap-2'>
-              <p className={`${active === 'Dashboard' ? 'active-link' : ''}`}>Dashboard</p>
+        <h1 className='title_text'>Dashboard</h1>
+        <div className='doctor_dashboard_grid'>
+          {/* Appointments */}
+          <div className='doctor_grid_item'>
+            <div className='flex items-center justify-between w-full'>
+              <h2 className='big_text'>Appointments</h2>
+              <button className='primary_btn shadow'>Browse All</button>
             </div>
-          </Link>
-          <Link href='/pages/admin/users'>
-            <div onClick={(e) => setActive('Users')} className='flex items-center gap-2'>
-              <p className={`${active === 'Users' ? 'active-link' : ''}`}>Users</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Patient's Name</th>
+                  <th>Type</th>
+                  <th>Appointment</th>
+                  <th>Account</th>
+                  <th>Status</th>
+                  <th>Doctor's Name</th>
+                </tr>
+              </thead>
+            </table>
+            <div className='flex-1 flex items-center justify-center w-full'>
+
+              <h3 className='text-center text-[40px] font-[600] w-full'>No Data</h3>
             </div>
-          </Link>
-          <Link href='/pages/admin/scheduling'>
-            <div onClick={(e) => setActive('Scheduling')} className='flex items-center gap-2'>
-              <p className={`${active === 'Scheduling' ? 'active-link' : ''}`}>Scheduling</p>
+          </div>
+          {/* Patients */}
+          <div className='doctor_grid_item'>
+            <div className='flex items-center justify-between w-full'>
+              <h2 className='big_text'>Patients</h2>
+              {/* <button className='primary_btn'>Browse All</button> */}
             </div>
-          </Link>
-          <Link href='/pages/admin/billing'>
-            <div onClick={(e) => setActive('Billing')} className='flex items-center gap-2'>
-              <p className={`${active === 'Billing' ? 'active-link' : ''}`}>Billing</p>
+              <LineChart />
+            {/* <div className='flex-1 flex items-center justify-center w-full'>
+
+              <h3 className='text-center text-[40px] font-[600] w-full'>No Data</h3>
+            </div> */}
+          </div>
+          {/* Labs */}
+          <div className='doctor_grid_item'>
+            <div className='flex items-center justify-between w-full'>
+              <h2 className='big_text'>Labs</h2>
+              <button className='primary_btn shadow'>Browse All</button>
             </div>
-          </Link>
-          <Link href='/pages/admin/reports'>
-            <div onClick={(e) => setActive('Reports')} className='flex items-center gap-2'>
-              <p className={`${active === 'Reports' ? 'active-link' : ''}`}>Reports</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Test</th>
+                  <th>Results</th>
+                  <th>Date</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+            </table>
+            <div className='flex-1 flex items-center justify-center w-full'>
+
+              <h3 className='text-center text-[40px] font-[600] w-full'>No Data</h3>
             </div>
-          </Link>
+          </div>
+          {/* Billings */}
+          <div className='doctor_grid_item'>
+            <div className='flex items-center justify-between w-full'>
+              <h2 className='big_text'>Billings</h2>
+              <button className='primary_btn shadow'>Browse All</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Patient</th>
+                  <th>Claim ID</th>
+                  <th>Billing Provider</th>
+                  <th>Payer</th>
+                  <th>Claim Amount</th>
+                </tr>
+              </thead>
+            </table>
+            <div className='flex-1 flex items-center justify-center w-full'>
+
+              <h3 className='text-center text-[40px] font-[600] w-full'>No Data</h3>
+            </div>
+          </div>
         </div>
-        <div className='flex flex-col gap-12 items-start p-8'>
-          <div className='flex items-start gap-2'>
-            <p>System Settings</p>
-            </div>
-          <div className='flex items-start gap-2'>
-            <p>Log Out</p>
-            </div>
-        </div>
-    </aside>
+
+      </main>
+    </section>
   )
 }
 
-export default sidebar;
+export default page;
