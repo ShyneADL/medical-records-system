@@ -20,7 +20,9 @@ const page = () => {
           <div className='flex items-center gap-4'>
             <Bell />
             <Messages />
-            <ProfileIcon />
+            <Link href='/pages/admin/profile'>
+              <ProfileIcon />
+            </Link>
           </div>
         </div>
         <h1 className='title_text'>Dashboard</h1>

@@ -29,6 +29,9 @@ const PatientsData = [
   { month: "April", Patients: 120 },
   { month: "May", Patients: 180 },
   { month: "June", Patients: 250 },
+  { month: "July", Patients: 120 },
+  { month: "August", Patients: 136 },
+  { month: "September", Patients: 82 },
 ];
 
 function LineChart() {
@@ -38,16 +41,16 @@ function LineChart() {
       {
         label: "Number of Patients",
         data: PatientsData.map((data) => data.Patients),
-        borderColor: "#cb0c9f",
+        borderColor: "#00AFEF",
         borderWidth: 3,
-        pointBorderColor: "#cb0c9f",
+        pointBorderColor: "#00AFEF",
         pointBorderWidth: 3,
         tension: 0.5,
         fill: true,
         backgroundColor: (context) => {
           const ctx = context.chart.ctx;
           const gradient = ctx.createLinearGradient(0, 0, 0, 300);
-          gradient.addColorStop(0, "#f797e1");
+          gradient.addColorStop(0, "#00AFEF");
           gradient.addColorStop(1, "white");
           return gradient;
         },
@@ -106,18 +109,11 @@ function LineChart() {
   };
 
   return (
-    <div>
-      <div
-        style={{
-          width: "466.98px",
-          height: "326.8px",
-          cursor: "pointer",
-          marginTop: "24px"
-        }}
-      >
+
+      <div className="line_chart">
         <Line data={data} options={options}></Line>
       </div>
-    </div>
+    
   );
 }
 

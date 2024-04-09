@@ -29,13 +29,11 @@ body {
 
 .admin_dashboard_grid {
   display: grid; 
-
-  grid-template-rows: repeat(2,minmax(200px,1fr));
-  grid-template-columns: repeat(3,minmax(200px,1fr));
+  grid-template-rows: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 30px;
   height: auto;
   width: 100%;
-  
 }
 
 .admin_grid_item {
@@ -105,8 +103,8 @@ table {
   width: 100%;
   margin-top: 24px;
   text-align: left;
-  background-color: var(--lightBlue);
   border-radius: 4px;
+  border-bottom: solid 1px var(--darkGrey)
 }
 
 th {
@@ -148,6 +146,20 @@ th {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.19);
   padding: 24px;
   height: 350px;
+}
+
+.grid_item_1{
+  grid-column: span 4;
+}
+
+.grid_item_2 {
+  grid-column: span 4;
+  height:375px;
+}
+
+.grid_item_3,
+.grid_item_4 {
+  grid-column: span 2;
 }
 
 .active-link {
@@ -289,4 +301,14 @@ input#radio-3:checked ~ .glider {
   left: 0;
   color: var(--blue);
   font-size: 12px;
+}
+
+.line_chart {
+  position: absolute;
+  width: 100%;
+  height: 326.8px;
+  cursor: pointer;
+  margin-top: 12px;
+  left: 20%;
+  translate:-50%,-30%;
 }

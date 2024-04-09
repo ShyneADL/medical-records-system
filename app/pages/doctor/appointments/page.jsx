@@ -23,16 +23,18 @@ const page = () => {
           <div className='flex items-center gap-4'>
             <Bell />
             <Messages />
-            <ProfileIcon />
+            <Link href='/pages/docotor/profile'>
+              <ProfileIcon />
+            </Link>
           </div>
         </div>
         <div className='flex items-center justify-between w-full'>
-          <h1 className='title_text'>Billing</h1>
+          <h1 className='title_text'>Appointments</h1>
           <button className='primary_btn'>Add a New Appointment</button>
         </div>
           <div className='flex items-center gap-3'>
             <Pill first="Today's appointments" second="Week Appointments" third="Month Appointments" />
-ß            {/* <DropdownMenu /> */}
+           {/* <DropdownMenu /> */}
           </div>
 
         <table className='w-full shadow'>

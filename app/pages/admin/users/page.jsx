@@ -22,7 +22,9 @@ const page = () => {
           <div className='flex items-center gap-4'>
             <Bell />
             <Messages />
-            <ProfileIcon />
+            <Link href='/pages/admin/profile'>
+              <ProfileIcon />
+            </Link>
           </div>
         </div>
           <div className='flex items-center justify-between w-full'>
@@ -31,7 +33,7 @@ const page = () => {
           </div>
         <div className='flex items-center justify-between w-full'>
           <Pill first='Patients' second='Doctors' third='Nurses' />
-          <button className='primary_btn'><p className='w-[128px]'>Add a New Doctor</p></button>
+          <button className='primary_btn'><p className='w-[128px]'>Add a New User</p></button>
         </div>
 
       </main>

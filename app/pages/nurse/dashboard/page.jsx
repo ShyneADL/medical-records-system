@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import DateBox from '@app/components/DateBox'
 
-const Dashboard = () => {  
+const page = () => {  
   return (
     <section className='flex items-start w-full'>
       <Sidebar/>
@@ -21,16 +21,18 @@ const Dashboard = () => {
           <div className='flex items-center gap-4'>
             <Bell />
             <Messages />
-            <ProfileIcon />
+            <Link href='/pages/nurse/profile'>
+              <ProfileIcon />
+            </Link>
           </div>
         </div>
         <h1 className='title_text'>Dashboard</h1>
         <div className='doctor_dashboard_grid'>
           {/* Appointments */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_1'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Appointments</h2>
-              <button className='primary_btn shadow'>Browse All</button>
+              <button className='primary_btn'>Browse All</button>
             </div>
             <table>
               <thead>
@@ -50,7 +52,7 @@ const Dashboard = () => {
             </div>
           </div>
           {/* Patients */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_2 relative'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Patients</h2>
               {/* <button className='primary_btn'>Browse All</button> */}
@@ -62,10 +64,10 @@ const Dashboard = () => {
             </div> */}
           </div>
           {/* Labs */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_3'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Labs</h2>
-              <button className='primary_btn shadow'>Browse All</button>
+              <button className='primary_btn'>Browse All</button>
             </div>
             <table>
               <thead>
@@ -84,10 +86,10 @@ const Dashboard = () => {
             </div>
           </div>
           {/* Billings */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_4'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Billings</h2>
-              <button className='primary_btn shadow'>Browse All</button>
+              <button className='primary_btn'>Browse All</button>
             </div>
             <table>
               <thead>
@@ -113,4 +115,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard;
+export default page;

@@ -15,31 +15,16 @@ const VisitsTab = () => {
           <div className='flex flex-col items-center justify-center bg-veryLightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
               <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
               <h3 className='text-black text-[16px] font-bold'>Headache</h3>
-              <Image
-              src=''
-              width={20}
-              height={20}
-              />
               <h2 className='text-darkGrey text-[22px] font-400 uppercase mt-2'>In Progress</h2>
             </div>
             <div className='flex flex-col items-center justify-center bg-veryLightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
               <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
               <h3 className='text-black text-[16px] font-bold'>Malaria</h3>
-              <Image
-              src=''
-              width={20}
-              height={20}
-              />
               <h2 className='text-black text-[22px] font-400 uppercase mt-2'>SIGNED OFF</h2>
             </div>
             <div className='flex flex-col items-center justify-center bg-veryLightBlue rounded-[12px] gap-2 py-4 px-[52px]'>
               <h4 className='text-grey text-[20px] font-400'>Tuesday, 03/02/2024</h4>
               <h3 className='text-black text-[16px] font-bold'>Broken Arm</h3>
-              <Image
-              src=''
-              width={20}
-              height={20}
-              />
               <h2 className='text-black text-[22px] font-400 uppercase mt-2'>SIGNED OFF</h2>
             </div>
           </div>

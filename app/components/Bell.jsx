@@ -5,7 +5,7 @@ const Bell = () => {
   return (
     <div className='rounded-full border-[1px] border-solid border-grey relative'>
       <Image
-      src=''
+      src='/assets/Bell.svg'
       width={24}
       height={24}
       />

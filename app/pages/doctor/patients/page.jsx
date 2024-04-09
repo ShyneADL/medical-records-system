@@ -24,7 +24,9 @@ const page = () => {
           <div className='flex items-center gap-4'>
             <Bell />
             <Messages />
-            <ProfileIcon />
+            <Link href='/pages/docotor/profile'>
+              <ProfileIcon />
+            </Link>
           </div>
         </div>
         <table>

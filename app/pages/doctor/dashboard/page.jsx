@@ -21,13 +21,15 @@ const page = () => {
           <div className='flex items-center gap-4'>
             <Bell />
             <Messages />
-            <ProfileIcon />
+            <Link href='/pages/docotor/profile'>
+              <ProfileIcon />
+            </Link>
           </div>
         </div>
         <h1 className='title_text'>Dashboard</h1>
         <div className='doctor_dashboard_grid'>
           {/* Appointments */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_1'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Appointments</h2>
               <button className='primary_btn'>Browse All</button>
@@ -50,7 +52,7 @@ const page = () => {
             </div>
           </div>
           {/* Patients */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_2 relative'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Patients</h2>
               {/* <button className='primary_btn'>Browse All</button> */}
@@ -62,7 +64,7 @@ const page = () => {
             </div> */}
           </div>
           {/* Labs */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_3'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Labs</h2>
               <button className='primary_btn'>Browse All</button>
@@ -84,7 +86,7 @@ const page = () => {
             </div>
           </div>
           {/* Billings */}
-          <div className='doctor_grid_item'>
+          <div className='doctor_grid_item grid_item_4'>
             <div className='flex items-center justify-between w-full'>
               <h2 className='big_text'>Billings</h2>
               <button className='primary_btn'>Browse All</button>

@@ -5,7 +5,7 @@ const ProfileIcon = () => {
   return (
     <div className='border-[1px] border-solid border-white rounded-full'>
       <Image
-      src=''
+      src='/assets/Profile.svg'
       width={30}
       height={30}
       />

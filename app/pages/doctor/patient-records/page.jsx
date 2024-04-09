@@ -24,7 +24,9 @@ const page = () => {
           <div className='flex items-center gap-4'>
             <Bell />
             <Messages />
-            <ProfileIcon />
+            <Link href='/pages/docotor/profile'>
+              <ProfileIcon />
+            </Link>
           </div>
         </div>
         <div className='flex items-center gap-5 max-w-[600px]'>
@@ -40,7 +42,7 @@ const page = () => {
             <Pill first='Chart' second='Documents' third='Medications'/>
             <div className='flex items-center gap-2 shadow p-4 rounded-[12px] bg-white'>
                 <Image 
-                src=''
+                src='/assets.Profile.svg'
                 width={24}
                 height={24}
                 className='rounded-full'
@@ -56,9 +58,9 @@ const page = () => {
             <div className='flex items-center justify-between p-6 border-b-[1px] border-b-solid border-b-lightGrey w-full'>
                 {/*Height*/}
                 <div className='flex flex-col items-start gap-6 w-[180px]'>
-                    <div className='flex items-start gap-2'>
+                    <div className='flex items-center gap-2'>
                       <Image
-                      src=''
+                      src='/assets/Ruler.svg'
                       width={16}
                       height={16}
                       />
@@ -68,11 +70,11 @@ const page = () => {
                 </div>
                 {/* Weight */}
                 <div className='flex flex-col items-start gap-6 w-[180px]'>
-                  <div className='flex items-start gap-2'>
+                  <div className='flex items-center gap-2'>
                       <Image
-                      src=''
-                      width={16}
-                      height={16}
+                      src='/assets/Weight.svg'
+                      width={24}
+                      height={24}
                       />
                       <p className='grey_text'>Weight</p>
                     </div>
@@ -80,11 +82,11 @@ const page = () => {
                 </div>
                 {/* BMI */}
                 <div className='flex flex-col items-start gap-6 w-[180px]'>
-                    <div className='flex items-start gap-2'>
+                    <div className='flex items-center gap-2'>
                       <Image
-                      src=''
-                      width={16}
-                      height={16}
+                      src='/assets/BMI.svg'
+                      width={28}
+                      height={28}
                       />
                       <p className='grey_text'>BMI</p>
                     </div>

@@ -31,9 +31,9 @@ const Sidebar = () => {
     <aside className='h-[100vh] fixed w-[250px] border-r-[1px] border-r-solid border-r-grey flex flex-col items-start justify-between'>
         <div className='p-8 w-full border-b-[1px] border-b-solid border-b-grey'>
           <Image
-          src=''
-          width={50}
-          height={50}
+          src='/assets/caleb-logo.png'
+          width={80}
+          height={80}
           />
         </div>
         <div className='flex flex-col items-start gap-6 h-[60%] p-8'>
@@ -47,11 +47,11 @@ const Sidebar = () => {
               <p className={`${active === '/pages/admin/users' ? 'active-link' : ''}`}>Users</p>
             </div>
           </Link>
-          <Link href='/pages/admin/scheduling'>
+          {/* <Link href='/pages/admin/scheduling'>
             <div className='flex items-center gap-2'>
               <p className={`${active === '/pages/admin/scheduling' ? 'active-link' : ''}`}>Scheduling</p>
             </div>
-          </Link>
+          </Link> */}
           <Link href='/pages/admin/billing'>
             <div className='flex items-center gap-2'>
               <p className={`${active === '/pages/admin/billing' ? 'active-link' : ''}`}>Billing</p>
