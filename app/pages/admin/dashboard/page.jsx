@@ -99,7 +99,7 @@ const page = () => {
               <button className='primary_btn'>Add a New Nurse</button>
             </div>
           </div>
-          
+          {/*  */}
         </div>
 
       </main>
