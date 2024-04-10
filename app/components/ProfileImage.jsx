@@ -1,9 +1,18 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const ProfileImage = () => {
-  const [image, setImage] = useState(localStorage.getItem('profileImage') || '/default-profile-image.png');
+  const [image, setImage] = useState(null); // Updated initial state
 
+  useEffect(() => {
+    // Retrieve Image on Component Mount
+    const storedImage = localStorage.getItem('profileImage');
+    if (storedImage) {
+      setImage(storedImage);
+    } else {
+      setImage('/assets/caleb-logo.png'); // Default if none found
+    }
+  }, []); 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     const reader = new FileReader();
