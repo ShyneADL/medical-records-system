@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Searchbar from '@app/components/Searchbar'
 import Sidebar from '@app/components/AdminSideBar'
 import Bell from '@app/components/Bell'
@@ -19,7 +20,7 @@ const page = () => {
         </div>
         <div className='flex items-center gap-4'>
           <Bell />
-          <Messages />
+          {/* <Messages /> */}
           <Link href='/pages/admin/profile'>
               <ProfileIcon />
             </Link>

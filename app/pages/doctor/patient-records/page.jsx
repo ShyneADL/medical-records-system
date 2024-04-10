@@ -23,8 +23,8 @@ const page = () => {
           </div>
           <div className='flex items-center gap-4'>
             <Bell />
-            <Messages />
-            <Link href='/pages/docotor/profile'>
+            {/* <Messages /> */}
+            <Link href='/pages/doctor/profile'>
               <ProfileIcon />
             </Link>
           </div>
@@ -40,18 +40,17 @@ const page = () => {
         </div>
         <div className='flex items-end gap-8'>
             <Pill first='Chart' second='Documents' third='Medications'/>
-            <div className='flex items-center gap-2 shadow p-4 rounded-[12px] bg-white'>
+            <div className='flex items-center gap-2 shadow p-4 rounded-[12px] bg-white min-w-[250px]'>
                 <Image 
-                src='/assets.Profile.svg'
-                width={24}
-                height={24}
+                src='/assets/Profile.svg'
+                width={70}
+                height={70}
                 className='rounded-full'
                 />
-                <div className='flex flex-col items-start justify-start gap-3'>
+                <div className='flex flex-col items-start justify-start gap-3 w-[150px]'>
                     <h5 className='big_text w-[150px]'>Dozie, Jude</h5>
                     <p className='text-[14px] font-500 w-[120px]'>21 years old, Male</p>
                 </div>
-
             </div>
         </div>
         <div className='flex flex-col items-start rounded-[12px] shadow bg-white w-[60%]'>

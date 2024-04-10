@@ -22,8 +22,8 @@ const page = () => {
           </div>
           <div className='flex items-center gap-4'>
             <Bell />
-            <Messages />
-            <Link href='/pages/docotor/profile'>
+            {/* <Messages /> */}
+            <Link href='/pages/doctor/profile'>
               <ProfileIcon />
             </Link>
           </div>

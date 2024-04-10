@@ -30,7 +30,7 @@ body {
 .admin_dashboard_grid {
   display: grid; 
   grid-template-rows: repeat(2, minmax(200px, 1fr));
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 30px;
   height: auto;
   width: 100%;

@@ -50,7 +50,7 @@ const Sidebar = () => {
         <Link href='/pages/doctor/patients' passHref>
           <div
             className={`flex items-center gap-2 ${
-              active === '/pages/doctor/patients' || '/pages/doctor/patient-records' ? 'active-link' : ''
+              active === '/pages/doctor/patients' || active === '/pages/doctor/patient-records' ? 'active-link' : ''
             }`}
             role='button'
             tabIndex='1'

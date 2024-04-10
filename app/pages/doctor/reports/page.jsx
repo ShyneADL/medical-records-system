@@ -6,6 +6,7 @@ import Bell from '@app/components/Bell'
 import Messages from '@app/components/Messages'
 import ProfileIcon from '@app/components/ProfileIcon'
 import DateBox from '@app/components/DateBox'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -19,8 +20,8 @@ const page = () => {
         </div>
         <div className='flex items-center gap-4'>
           <Bell />
-          <Messages />
-          <Link href='/pages/docotor/profile'>
+          {/* <Messages /> */}
+          <Link href='/pages/doctor/profile'>
               <ProfileIcon />
             </Link>
         </div>
