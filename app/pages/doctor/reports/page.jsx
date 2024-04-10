@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Searchbar from '@app/components/Searchbar'
+import Searchbar from '@app/components/SearchBar'
 import Sidebar from '@app/components/DoctorSideBar'
 import Bell from '@app/components/Bell'
 import Messages from '@app/components/Messages'
