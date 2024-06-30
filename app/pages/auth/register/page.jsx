@@ -53,7 +53,7 @@ const Page = () => {
             className=''
           />
         </div>
-        <h2 className="big_text">Sign Up</h2>
+        <h2 className="big_text">Register</h2>
         <form className='mt-4' onSubmit={handleSubmit}>
           <div className="user_box">
             <input
@@ -106,7 +106,7 @@ const Page = () => {
             <label>Confirm Password</label>
           </div>
           {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-          	<button type="submit" className='primary_btn'>Sign Up</button>
+          	<button type="submit" className='primary_btn'>Register</button>
 		  {/* <Link href='/pages/auth/login'>
 		  </Link> */}
         </form>

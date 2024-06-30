@@ -52,11 +52,11 @@ const Sidebar = () => {
               <p className={`${active === '/pages/admin/scheduling' ? 'active-link' : ''}`}>Scheduling</p>
             </div>
           </Link> */}
-          <Link href='/pages/admin/billing'>
+          {/* <Link href='/pages/admin/billing'>
             <div className='flex items-center gap-2'>
               <p className={`${active === '/pages/admin/billing' ? 'active-link' : ''}`}>Billing</p>
             </div>
-          </Link>
+          </Link> */}
           <Link href='/pages/admin/reports'>
             <div className='flex items-center gap-2'>
               <p className={`${active === '/pages/admin/reports' ? 'active-link' : ''}`}>Reports</p>
